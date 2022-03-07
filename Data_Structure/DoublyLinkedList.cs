@@ -14,7 +14,7 @@ namespace Data_Structure
         /// Add a node to the last position of the linked list
         /// </summary>
         /// <param name="data"></param>
-        public void addLast(object data)
+        public void addLast(HashTableData data)
         {
             if (head == null)
             {
@@ -37,7 +37,7 @@ namespace Data_Structure
         /// Add a node to the first position of the linked list
         /// </summary>
         /// <param name="data"></param>
-        public void addFirst(object data)
+        public void addFirst(HashTableData data)
         {
             if (head == null)
             {
@@ -69,10 +69,10 @@ namespace Data_Structure
     }
     class Node
     {
-        public object data = null;
+        public HashTableData data = null;
         public Node next = null;
         public Node prev = null;
-        public Node(object data, Node next, Node prev)
+        public Node(HashTableData data, Node next, Node prev)
         {
             this.data = data;
             this.next = next;
